@@ -2,19 +2,17 @@
 
 ## chat app
 
-##First project imple as - yeah right!
+### First project simple as - yeah right!
 
-## What I may need
+### What I may need
 
-* A well considered user interface requires a smart wireframe design.
+* wireframe design for user interface (focus on mobile first/responsive design)
 * System design diagram
 * Data flow diagrams
-* Test document diagrams - perhaps a table of tests to do, checks for either pass of fail and client sign-off.
+* Test document diagrams.
 * Use real data
-* User focused
-* Responsive design
 
-## Learning objectives
+### Learning objectives
 
 * File system set-up
 * Terminal commands
@@ -26,7 +24,7 @@
 * More efficient js code eg: using ternary operators
 * Minimizing js file size for faster load time
 
-## Glossary of npm modules, js concepts and technologies....
+### Glossary of npm modules, js concepts and technologies....
 
 * Eslint standard eslint-airbub-config - a tool for identifying and reporting on patterns found in
 ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I know for sure. Can set rules for the programmer (standards to follow) in the config.
