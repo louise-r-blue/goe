@@ -1,11 +1,8 @@
 {
   "name": "goe",
   "version": "1.0.0",
-  "description": "chat-app with better user choices ",
+  "description": "different",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "start": "budo . -d --serve bundle.js --live",
     "build": "browserify . -o bundle.js -g uglifyify",
@@ -21,24 +18,20 @@
     "type": "git",
     "url": "https://github.com/louise-r-blue/goe"
   },
-  "keywords": [],
   "author": "louise-r-blue",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/louise-r-blue/goe/issues"
   },
-  "homepage": "https://github.com/louise-r-blue/goe#readme",
-  "dependencies": {
-    "hyperscript": "^1.4.7",
-    "jquery": "^2.2.2"
-  },
+  "homepage": "https://github.com/louise-r-blue/goe",
+  "dependencies": {},
   "devDependencies": {
-    "browserify": "^10.2.6",
+    "browserify": "^10.0.0",
     "budo": "^4.0.0",
     "gh-pages": "^0.3.0",
     "smokestack": "^3.3.0",
     "tap-spec": "^4.0.2",
-    "tape": "^4.5.1",
+    "tape": "^4.0.0",
     "uglifyify": "^3.0.1",
     "watchify": "^3.1.0"
   }
