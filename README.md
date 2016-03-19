@@ -42,4 +42,4 @@ ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I 
 * Slush-pages - a slush generator for static pages using browserify & jQuery.
 * REST APIs twitter.com: access to read and write Twitter data. Will want read functionality to check/filter user's tweet messages.
 
-:scream:# chat-app-trial
+:scream:#
