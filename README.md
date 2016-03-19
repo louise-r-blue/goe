@@ -8,7 +8,8 @@
 
 * wireframe design for user interface (focus on mobile first/responsive design)
 * System design diagram
-* Data flow diagrams
+* Data flow diagram
+
 * Test document diagrams.
 * Use real data
 
