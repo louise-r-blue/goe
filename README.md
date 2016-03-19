@@ -1,6 +1,8 @@
 # Goe
 
-## chat app
+## chat app description
+
+A chat application that offers a extra layer of choice for users when reading their own messages. On login the user will have the choice of opening their message/s OR filtering the message/s to check for words that may offend them. If the user decides to filter they can then read their messages but with offensive words replaced with other words.
 
 ### First project simple as - yeah right!
 
