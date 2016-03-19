@@ -26,7 +26,7 @@ A chat application that offers a extra layer of choice for users when reading th
 * Minimizing js file size for faster load time.
 * Use real data.
 
-### Glossary of npm modules, js concepts and technologies....(Not sure what npm's I am using an d this can be removed from README).
+### Glossary of npm modules, js concepts and technologies....(Not sure what npm's I am using and this glossary can be removed from README).
 
 * Eslint standard eslint-airbub-config - a tool for identifying and reporting on patterns found in
 ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I know for sure. Can set rules for the programmer (standards to follow) in the config.
