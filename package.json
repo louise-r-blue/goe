@@ -24,7 +24,10 @@
     "url": "https://github.com/louise-r-blue/goe/issues"
   },
   "homepage": "https://github.com/louise-r-blue/goe",
-  "dependencies": {},
+  "dependencies": {
+    "hyperscript": "^1.4.7",
+    "jquery": "^2.2.2"
+  },
   "devDependencies": {
     "browserify": "^10.0.0",
     "budo": "^4.0.0",
