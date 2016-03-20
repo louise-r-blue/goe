@@ -28,7 +28,7 @@ $(document).ready(function(){
   $('form').submit(function(event){
     var newMessage = {}
     newMessage["sender"] = $('input#name').val()
-    newMessage["message"] = $('input#message').val()
+    newMessage["message"] = $('textarea#message').val() //this was input#message
     $.post("http://localhost:3000/v1/messages", newMessage)// function(){
 
     // })
