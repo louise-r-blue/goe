@@ -10,12 +10,15 @@ function refreshMsg(){
   console.log("Time :")
   getMessages()
 }
-function getMessages(){
+
+function getMessages() {
   $.get("http://localhost:3000/v1/messages")
   .done(function(data){
-    for (var i = 0; i < data.messages.length; i++){
-      var sender = data.messages[i].sender
-      var message = data.messages[i].message
+    oldMessages = data.messages.length;
+  for (var i = 0; i < data.messages.length; i++){
+      console.log("data", data.messages.length +" : " + "old" + oldMessages)
+      var sender = data.messages[i].sender;
+      var message = data.messages[i].message;
       var html = h('div.message', {style: {'font-size': '1.5em'}}, h('p', {}, sender + ": " + message), h('hr',{}))
       $('main').append(html)
     }
@@ -24,6 +27,7 @@ function getMessages(){
     console.log(err);
   })
 }
+
 $(document).ready(function(){
   $('form').submit(function(event){
     var newMessage = {}
