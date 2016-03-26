@@ -55,6 +55,6 @@ ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I 
 * Tap--spec - formatted TAP output (colors output)
 * Promises - represents the eventual result of asynchronous operations
 * Slush-pages - a slush generator for static pages using browserify & jQuery.
-* REST APIs twitter.com: access to read and write Twitter data. Will want read functionality to check/filter user's tweet messages.
+* STRETCH: REST APIs twitter.com: access to read and write Twitter data. Will want read functionality to check/filter user's tweet messages.
 
 :scream:#
