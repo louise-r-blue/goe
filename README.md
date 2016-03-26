@@ -41,7 +41,7 @@ The first milestone ( first presentation) is to have the read/write messages pag
 * An npm chat app. There is a lot out there and yet to make a decision on this.
 * Eslint standard eslint-airbub-config - a tool for identifying and reporting on patterns found in
 ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I know for sure. Can set rules for the programmer (standards to follow) in the config.
-* Express and Express generator - node.js web application. I will want to write routes that [GET]/v1/message/s and [POST]/v1/message
+* Express and Express generator - node.js web application. Has tools for http servers. Write routes that [GET]/v1/message/s and [POST]/v1/message
 
 * Cheerio - implementation of jQuery designed for the server
 * fs - file system read and write
