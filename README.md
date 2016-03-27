@@ -40,7 +40,8 @@ The first milestone ( first presentation) is to have the read/write messages pag
 
 This glossary is really for my own learning objectives. Not sure what npm's I am using and the glossary can be removed from README.
 
-* An npm chat app. Presently looking at Layer Web SDK is a js library for adding chat services to your application. Has a lot of complex documentation. Too complex for me but complex is better than none
+* Chat npm/s. Looking at Layer Web SDK is a js library for adding chat services to your application, simple-nodejs-chat, socket.io-chat and Angular JS chat.
+.
 * Eslint standard eslint-airbub-config - a tool for identifying and reporting on patterns found in
 ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I know for sure. Can set rules for the programmer (standards to follow) in the config.
 * Express and Express generator - node.js web application. Has tools for http servers. Write routes that [GET]/v1/message/s and [POST]/v1/message
