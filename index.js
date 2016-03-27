@@ -66,18 +66,12 @@ function getMessages() {
       var sender = data.messages[i].sender;
       var message = data.messages[i].message;
       var html = h('div.message', {style: {'font-size': '1.5em'}}, h('p', {}, sender + ": " + message), h('hr',{}))
-      $('main').append(html).append(myVar)
+      $('main').append(html)
     }
   })
   .fail(function(err){
     console.log(err);
   })
-}
-var myVar = setInterval(function() { myTimer () }, 1000);
-
-function myTimer() {
-  var d = new Date();
-  var t = d.toLocaleTimeString();
 }
 
 $(document).ready(function(){

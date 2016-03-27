@@ -36,9 +36,11 @@ The first milestone ( first presentation) is to have the read/write messages pag
 * Use actual/real data. (maybe sensitive)
 * Write some code! (follow commenting conventions and syntax standards)
 
-### Glossary of npm modules, js concepts and technologies....(Not sure what npm's I am using and this glossary can be removed from README).
+### Glossary of npm modules, js concepts and technologies....
 
-* An npm chat app. There is a lot out there and yet to make a decision on this.
+This glossary is really for my own learning objectives. Not sure what npm's I am using and the glossary can be removed from README.
+
+* An npm chat app. Presently looking at Layer Web SDK is a js library for adding chat services to your application. Has a lot of complex documentation. Too complex for me but complex is better than none
 * Eslint standard eslint-airbub-config - a tool for identifying and reporting on patterns found in
 ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I know for sure. Can set rules for the programmer (standards to follow) in the config.
 * Express and Express generator - node.js web application. Has tools for http servers. Write routes that [GET]/v1/message/s and [POST]/v1/message
@@ -55,6 +57,6 @@ ECMAScript/js code. Lets you know that you have semantic/syntax errors - that I 
 * Tap--spec - formatted TAP output (colors output)
 * Promises - represents the eventual result of asynchronous operations
 * Slush-pages - a slush generator for static pages using browserify & jQuery.
-* STRETCH: REST APIs twitter.com: access to read and write Twitter data. Will want read functionality to check/filter user's tweet messages.
+* STRETCH: REST APIs twitter.com: access to read and write user's Twitter data. Will want read functionality to check/filter user's tweet messages.
 
 :scream:#
