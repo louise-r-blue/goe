@@ -46,19 +46,22 @@ $(document).ready(function(){
     // })
 })
 })
-fs.readFileAsync(__dirname + "/data/data.json", "utf8")//need a data dir and data.json
-  .then(function(contents){
-    var msgObject = JSON.parse(contents)
-    return request.get(msgObject.text)//?
-      .endAsync()
-  })
-  .then(function(res){
-    var msgs = parseToObject(extractMsgs(res.text)) //extractMsgs - function to get file contents
-    return fs.writeFileAsync(__dirname + "/data/links.json", JSON.stringify(msgs), 'utf8')
-  })
-  .catch(function(error){
-    console.log(error)
-  })
+
+//promsify and fs read/write
+
+// fs.readFileAsync(__dirname + "/data/data.json", "utf8")//need a data dir and data.json
+//   .then(function(contents){
+//     var msgObject = JSON.parse(contents)
+//     return request.get(msgObject.text)//?
+//       .endAsync()
+//   })
+//   .then(function(res){
+//     var msgs = parseToObject(extractMsgs(res.text)) //extractMsgs - function to get file contents
+//     return fs.writeFileAsync(__dirname + "/data/msgs.json", JSON.stringify(msgs), 'utf8')
+//   })
+//   .catch(function(error){
+//     console.log(error)
+//   })
 
 
 // console.log("welcome to goe")
