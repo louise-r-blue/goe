@@ -48,7 +48,9 @@ console.log("welcome to goe")
 
 var h = require('hyperscript');
 var $ = require("jquery");
-
+var Promise = require('bluebird')
+var fs = Promise.promisifyAll(require('fs'))
+var request = require('superagent')
 
 window.setInterval(refreshMsg, 5000)
 function refreshMsg(){
