@@ -32,22 +32,14 @@ function getMessages() {
 
 $(document).ready(function(){
   $('form').submit(function(event){
-// open messages promsify and fs read/write
-fs.readFileAsync(__dirname + "/data/myMessages.json", "utf8")//need a data dir and data.json
-.then(function(contents){
-  var msgObject = JSON.parse(contents)
-    return request.get(msgObject.text)//?
-    .endAsync()
-  })
-.then(function(res){
-    var msgs = parseToObject(extractMsgs(res.text)) //extractMsgs - function to get file contents
-    return fs.writeFileAsync(__dirname + "/data/msgs.json", JSON.stringify(msgs), 'utf8')
-  })
-.catch(function(error){
-  console.log(error)
+    var newMessage = {}
+    newMessage["sender"] = $('input#name').val()
+    newMessage["message"] = $('textarea#message').val()
+    //this was input#message maybe here need to push new message onto messages array
+    $.post("http://localhost:3000/v1/messages", newMessage)//this posts to server
 })
 })
-})
+
 // $(document).ready(function(){
 //   $('form').submit(function(event){
 //     var newMessage = {}
