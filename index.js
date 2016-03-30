@@ -6,19 +6,19 @@ var Promise = require('bluebird')
 var fs = Promise.promisifyAll(require('fs'))
 var request = require('superagent')
 
-window.setInterval(refreshMsg, 5000)
-function refreshMsg(){
-  $('div.message').remove()
-  console.log("Time : " )
-  getMessages()
-}
+// window.setInterval(refreshMsg, 5000)
+// function refreshMsg(){
+//   $('div.message').remove()
+//   console.log("Time : " )
+//   getMessages()
+// }
 
 function getMessages() {
   $.get("http://localhost:3000/v1/messages")
   .done(function(data){
     oldMessages = data.messages.length;
     for (var i = 0; i < data.messages.length; i++){
-      console.log("data : ", data.messages +" : " + "old" + oldMessages)
+      //console.log("data : ", data.messages +" : " + "old" + oldMessages)
       var sender = data.messages[i].sender;
       var message = data.messages[i].message;
       var html = h('div.message', {style: {'font-size': '1.5em'}}, h('p', {}, sender + ": " + message), h('hr',{}))
@@ -31,6 +31,7 @@ function getMessages() {
 }
 
 $(document).ready(function(){
+  getMessages()
   $('form').submit(function(event){
     var newMessage = {}
     newMessage["sender"] = $('input#name').val()
