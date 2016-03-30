@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/louise-r-blue/goe",
   "dependencies": {
+    "bluebird": "^3.3.4",
+    "fs": "0.0.2",
     "hyperscript": "^1.4.7",
-    "jquery": "^2.2.2"
+    "jquery": "^2.2.2",
+    "superagent": "^1.8.3"
   },
   "devDependencies": {
     "browserify": "^10.0.0",

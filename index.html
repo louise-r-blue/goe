@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>goe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>goe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
 
-  <!--Ubuntu|Noto+Sans|Duru+Sans|Poppins|Nobile:400,400italic,700,700italic-->
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!--Ubuntu|Noto+Sans|Duru+Sans|Poppins|Nobile:400,400italic,700,700italic-->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" type ="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link href="index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <main>
-      <h1>goe</h1>
-    </main>
-    <form id="send-message" class = "container">
-      <div class = "row">
-      <label for ="name">Name</label>
-      <input class ="u-full-width" id="name" type="text" placeholder="name">
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+  <main class = "container">
+    <h1>goe</h1>
+  </main>
+  <form id="send-message" class = "container">
+    <div class = "row">
+      <label for ="name">To</label>
+      <input class ="u-full-width" id="name" type="text" placeholder=" ">
       <label for ="message">Message</label>
-
-      <textarea class ="u-full-width" id="message" type="text" placeholder="Hi ... "></textarea> <!--was input -->
-      <input type="submit" value="Send">
+      <textarea class ="u-full-width" id="message" type="text" placeholder=" "></textarea> <!--was input -->
+      <!--<textarea class = "u-full-width" id ="filtered-msg-result" type="text" placeholder ="The filtered message is..." readonly = "true"></textarea>-->
+      <div class = "u-full-width" id ="filtered-msg-result" type="text" placeholder ="The filtered message is..." readonly = "true"></div>
+      <input type="submit" value="Send message"><!-- could be class button value send message-->
+      <input type="submit" value="Open message"><!-- could be class button value open message-->
+      <input type="submit" value="Filter message"><!-- could be class button value filter message-->
+      <input type ="submit" value="Twitter">
     </form>
-    <script src="bundle.js"></script>
-  </body>
+  <script src="bundle.js"></script>
+</body>
 </html>
 
