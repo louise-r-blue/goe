@@ -9,7 +9,7 @@ var request = require('superagent')
 
 
 function testEndPoint(){
-  $.get("http://localhost:3000/v1/messages")
+  $.get("http://localhost:9966/v1/messages")
     .done(function(data,status){
       //console.log("result :", data.length)
       for( var i = 0; i < data.length; i++){
@@ -34,6 +34,7 @@ $(document).ready(function(){
     newMessage["sender"] = $('input#name').val()
     newMessage["message"] = $('textarea#message').val()
     //this was input#message maybe here need to push new message onto messages array
-    $.post("http://localhost:3000/v1/messages", newMessage)//this posts to server
+    // $.post("http://localhost:3000/v1/messages", newMessage)//this posts to server
+      $.post("http://localhost:9966/v1/messages", newMessage)//this posts to server
 })
 })
